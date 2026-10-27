@@ -81,8 +81,6 @@ See [`hardware/components.md`](hardware/components.md) and [`hardware/pinout.md`
 | Motor 3 | Motor Shield M3 |
 | Motor 4 | Motor Shield M4 |
 
-The `AFMotor` library maps motor objects to motor-shield channels. Confirm the board and shield revision before wiring.
-
 ## Working Principle
 
 1. The ultrasonic sensor measures the distance to an object in front of the robot.
@@ -100,32 +98,6 @@ The firmware's forward condition combines the distance range with the case where
 - [Arduino IDE](https://www.arduino.cc/en/software)
 - `NewPing` library
 - `AFMotor` library compatible with the Adafruit Motor Shield V1 family
-
-**Compatibility note:** `AFMotor` is intended for the older Adafruit Motor Shield V1 family and is not compatible with every motor shield. Verify your exact hardware before uploading.
-
-## Getting Started
-
-1. Download or clone this repository.
-2. Open `firmware/ObjectFollowerRobot/ObjectFollowerRobot.ino` in Arduino IDE.
-3. Install the required `NewPing` and compatible `AFMotor` libraries.
-4. Select the correct board and serial port.
-5. Verify the circuit, pin mapping, motor-driver compatibility, and power connections.
-6. Upload the sketch.
-7. Open Serial Monitor at **9600 baud** to observe sensor readings.
-8. Test with the wheels lifted off the ground first, then move to a clear test area.
-
-## Testing Checklist
-
-- [ ] Confirm controller and motor-shield models.
-- [ ] Verify ultrasonic trigger and echo wiring.
-- [ ] Verify the two digital inputs and their active HIGH/LOW states.
-- [ ] Check forward, left, right, and stop behavior with wheels raised.
-- [ ] Test the 3 cm and 15 cm thresholds using measured distances.
-- [ ] Check behavior when no valid ultrasonic echo is received.
-- [ ] Run on a clear surface and record actual results.
-- [ ] Check motor-driver temperature, battery voltage, and wiring.
-
-See [`documentation/testing.md`](documentation/testing.md) for a test log template.
 
 ## Repository Structure
 
