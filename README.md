@@ -165,8 +165,6 @@ Object-Follower-Robot/
 - **Ashwani Patel**
 - **Aman Pratap Singh**
 
-This project was developed collaboratively. Individual contribution details can be added once each person's specific work is agreed and documented.
-
 ## License
 
 The repository contains an MIT License template. Confirm that both contributors agree to publish under this license before retaining it.
