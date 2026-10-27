@@ -49,7 +49,7 @@ GitHub may display video files differently depending on the browser. If an embed
 ## Features
 
 - Ultrasonic distance measurement using the `NewPing` library.
-- Four DC motors controlled through an `AFMotor`-compatible motor shield.
+- Two DC gear motors controlled through an `AFMotor`-compatible motor shield.
 - Forward movement based on the configured distance band and digital input states.
 - Left and right turning based on directional input states.
 - Motor release/stop behavior for specified distance conditions.
@@ -59,11 +59,11 @@ GitHub may display video files differently depending on the browser. If an embed
 
 The exact component models should be confirmed against the physical build before replicating the project.
 
-- Arduino-compatible controller
-- Adafruit Motor Shield V1-compatible driver setup
-- Four DC motors and robot chassis
-- Ultrasonic distance sensor compatible with `NewPing`
-- Two digital sensing inputs connected to A2 and A3
+- Arduino UNO R3
+- Adafruit Motor Shield
+- Two DC gear motors and robot chassis
+- Ultrasonic distance sensor SR04
+- Two digital IR sensor
 - Suitable motor power supply, connecting wires, and mounting hardware
 
 See [`hardware/components.md`](hardware/components.md) and [`hardware/pinout.md`](hardware/pinout.md) for details.
